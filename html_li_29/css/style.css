@@ -1,0 +1,310 @@
+/* ここから下に記載していく */
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    font-size: 21px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.logo {
+    width: 300px;
+}
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+.main-visual {
+    background-image: url('../img/mainbg.png');
+    background-size: cover;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-visual p{
+    margin: 30px 0;
+}
+#main-visual1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+#main-visual2 {
+    color: white;
+    font-size: 36px;
+}
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#sectionABOUT {
+    color: #ffd61a;
+}
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+    line-height: 2;
+}
+p {
+    line-height: 2;
+    font-size: 16px;
+    text-align: center;
+}
+.section-about p{
+    margin-bottom: 40px;
+}
+.scroll-container {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+.scroll-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-100%);}
+}
+.course-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.course-content p{
+    text-align: left;
+}
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.course-image {
+    width: 50%;
+}
+.course-image img {
+    width: 100%;
+}
+.course-content {
+    width: 50%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.course-content h3 {
+    margin-left: 50px;
+}
+.course-content p {
+    margin-left: 50px;
+}
+#courseContent2 h3{
+    margin-left: 120px;
+}
+#courseContent2 p{
+    margin-left: 120px;
+}
+#sectionNEWS {
+    color: #ffd61a;
+}
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.news-item {
+    background-color: #fafafa;
+    width: 300px;
+}
+.news-content p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.news-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(33, 33, 33, .5);
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+.btn-more {
+    width: 300px;
+    height: 60px;
+    background-color: #ffd61a;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    /* margin-bottom: 60px; */
+    border: none;
+    letter-spacing: .05em;
+}
+.btn-more:hover {
+    box-shadow: 0 0 10px rgba(33, 33, 33, .5);
+    cursor: pointer;
+}
+.section-access {
+    background-color: #fafafa;
+    padding-bottom: 60px;
+}
+#sectionACCESS {
+    padding-top: 60px;
+}
+.access-container {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.access-item {
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+}
+.access-item-text {
+    position: absolute;
+    left: 45%;
+}
+.section-contact p{
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 70px;
+    justify-content: center;
+}
+.form-group {
+    display: flex;
+    height: 36px;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+label {
+    width: 240px;
+    margin-left: 80px;
+    /* margin-right: 16px; */
+}
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    box-sizing: border-box;
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#form-group-checkbox {
+    align-items: flex-start;
+}
+.checkbox-label {
+    flex: 0 0 120px;
+    margin-right: 30px; /* 减少标题和选项之间的距离 */
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    margin-top: auto;
+    gap: 24px;
+    flex: 1;
+}
+.checkbox-group label {
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.checkbox-group input[type="checkbox"] {
+margin-right: 20px; /* 复选框和文本之间的间距 */
+}
+#form-group-message {
+    align-items: flex-start;
+    margin-top: 130px;
+}
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    margin-top: auto;
+}
+#btn-submit {
+    width: 300px;
+    height: 60px;
+    background-color: #ffd61a;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 140px;
+    border: none;
+    letter-spacing: .05em;
+}
+#btn-submit:hover {
+    box-shadow: 0 0 10px rgba(33, 33, 33, .5);
+    cursor: pointer;
+}
+footer {
+    background-color: #707070;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+}
+@media (max-width: 1200px) {
+    #scrollToTopBtn {
+        right: calc(50% - 600px + 20px);
+    }
+} */
